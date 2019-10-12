@@ -46,7 +46,6 @@ int Compress(char* FileInName, char* FileOutName)
 	PrintFreq(Freq);
 
 	printf("\n\n");
-
 	CreateNodes(Nodes, Freq, &NumOfNodes);
 	printf("Nodes:\n");
 	PrintNodes(Nodes, NumOfNodes);
