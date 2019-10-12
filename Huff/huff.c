@@ -68,7 +68,7 @@ int Compress(char* FileInName, char* FileOutName)
 	PrintCodes(Codes, Freq);
 
 	WriteTable(NumOfNodes, FOut, Freq);
-	Enñode(FIn, FOut, Codes, Nodes[0]->Freq);
+	Encode(FIn, FOut, Codes, Nodes[0]->Freq);
 
 	fclose(FIn);
 	fclose(FOut);
