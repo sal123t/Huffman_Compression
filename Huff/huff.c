@@ -11,7 +11,7 @@ static void PrintFreq(int* Freq)
 
 	for (i = 0; i < 256; i++)
 		if (Freq[i] != 0)
-			printf("%i", Freq[i]);
+			printf("%i, ", Freq[i]);
 }
 
 static PrintNodes(TREE* Nodes[], int NumOfNodes)
@@ -68,7 +68,7 @@ int Compress(char* FileInName, char* FileOutName)
 	PrintCodes(Codes, Freq);
 
 	WriteTable(NumOfNodes, FOut, Freq);
-	Enñode(FIn, FOut, Codes, Nodes[0]->Freq);
+	EnÃ±ode(FIn, FOut, Codes, Nodes[0]->Freq);
 
 	fclose(FIn);
 	fclose(FOut);
