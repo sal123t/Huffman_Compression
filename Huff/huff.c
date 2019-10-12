@@ -41,6 +41,7 @@ int Compress(char* FileInName, char* FileOutName)
 	}
 
 	printf("\n-=Compress=-\n");
+	
 	CountFreq(Freq, FIn);
 	printf("Frequences:\n");
 	PrintFreq(Freq);
@@ -92,6 +93,7 @@ int Decompress(char* FileInName, char* FileOutName)
 	}
 
 	printf("\n-=Decompress=-\n");
+	
 	ReadTable(FIn, Freq);
 	printf("Frequences:\n");
 	PrintFreq(Freq);
